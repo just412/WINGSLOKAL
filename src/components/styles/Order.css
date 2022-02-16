@@ -1,0 +1,47 @@
+.title-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-section h1 {
+    white-space: nowrap;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: clamp(1rem, 5.5vw, 6rem);
+    color: whitesmoke;
+    margin-top: 60px;
+}
+
+.sub-title {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-title h2 {
+    white-space: nowrap;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: clamp(1rem, 2.5vw, 4rem);
+    color: goldenrod;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.fb, .ig, .gmail {
+    margin: 50px 20px 0px;
+    transition: all .3s ease-in;
+}
+
+.fb:hover, .ig:hover, .gmail:hover {
+    position: relative;
+    bottom: 20px;
+    transform: translateY(-8px);
+}

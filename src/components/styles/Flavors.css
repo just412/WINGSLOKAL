@@ -1,0 +1,63 @@
+.flavor-section {
+    width: 90vw;
+}
+
+.best-seller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-seller h1 {
+    margin: 50px 0px 50px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 3rem;
+}
+
+.best-flavors {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.best-flavors img {
+    width: clamp(15rem, 20vw, 20rem);
+    height: auto;
+}
+
+.b-flavors {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.b-flavors h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 2rem;
+    padding-bottom: 10px;
+    border-bottom: 5px rgba(218, 165, 32, 0.85) solid;
+}
+
+
+.flavors {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+.flavors-img {
+    display: block;
+    height: auto;
+    width: clamp(25rem, 50vw, 45rem);
+    margin: 50px 0px;
+}
+
+@media screen and (max-width:992px) {
+    .best-flavors {
+        flex-direction: column;
+    }
+}

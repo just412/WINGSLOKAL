@@ -1,0 +1,152 @@
+nav {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-active {
+    position: fixed;
+    background-color: rgba(218, 165, 32, 0.85);
+    height: 4.5rem;
+}
+
+nav h1 {
+    position: absolute;
+    left: 30px;
+    display: none;
+}
+
+nav h1 a {
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 70%;
+}
+
+
+.nav-links a{
+    color: rgba(255, 255, 255, 0.90);
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+img {
+    height: 6rem;
+    width: 6rem;
+}
+
+.img-shirk {
+    height: 4rem;
+    width: 4rem;
+}
+
+.link {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+.hamburger-toggle {
+    color: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+    display: none;
+}
+
+.burger {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+}
+
+.bun {
+    width: 2.06rem;
+    height: 0.25rem;
+    /* background-color: rgb(204, 192, 192); */
+    background-color: #1E1C1C;
+    border-radius: 10px;
+    transform-origin: 1px;
+    transition: all 0.2s linear;
+}
+
+@media screen and (max-width:992px) {
+    
+    nav {
+        height: 6rem;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .hamburger-toggle {
+        display: block;
+    }
+
+    .nav-links .title-link {
+        display: none;
+    }
+
+    nav h1 {
+        display: block;
+    }
+
+    img {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .link {
+        font-size: 2rem;
+    }
+
+    .link:nth-child(5) {
+        margin-bottom: 20%;
+    }
+
+    .link a:hover {
+        color: goldenrod;
+    }
+
+    .nav-active {
+        position: fixed;
+        background-color: rgba(218, 165, 32, 0.85);
+        height: 5.1rem;
+    }
+
+    .nav-links {
+        position:absolute;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        width: 100%;
+        top: 9.3vh;
+        /* background-color: rgba(255, 255, 255, .15);   */
+        background-color: rgba(15, 15, 15, 0.85);
+        backdrop-filter: blur(2px);
+        transform: translateX(100%); 
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .active {
+        transform: translateX(0%);
+    }
+}

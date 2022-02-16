@@ -1,0 +1,21 @@
+.burger {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+}
+
+.bun {
+    width: 2.06rem;
+    height: 0.25rem;
+    /* background-color: rgb(204, 192, 192); */
+    background-color: #1E1C1C;
+    border-radius: 10px;
+    transform-origin: 1px;
+    transition: all 0.2s linear;
+}
+

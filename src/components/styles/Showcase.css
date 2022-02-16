@@ -1,0 +1,98 @@
+.showcase {
+    font-family: 'Open Sans', sans-serif;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.showcase h1 {
+    font-weight: bolder;
+    font-size: clamp(3rem, 6vw, 6rem);
+    color: goldenrod;
+    letter-spacing: 3px;
+}
+
+.showcase h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin: 50px auto 0px;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    color: rgba(255, 255, 255, 0.80);
+    font-weight: bolder;
+    letter-spacing: 4px;
+}
+
+.showcase p {
+    color: rgba(255, 255, 255, 0.80);
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0 50px 0;
+}
+
+.showcase_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.showcase_btn-menu {
+    font-family: 'Open Sans', sans-serif;
+    border: rgba(255, 255, 255, 0.80) solid 1px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.80);
+    padding: 20px;
+    margin: auto 10px;
+    cursor: pointer;
+    font-size: clamp(.8rem, 3vw, 1rem);
+    letter-spacing: 1px;
+    white-space: nowrap;
+    text-align: center;
+    width: clamp(10rem, 20vw, 15rem);
+}
+
+.showcase_btn-contact {
+    font-family: 'Open Sans', sans-serif;
+    border: rgba(255, 255, 255, 0.80) solid 1px;
+    background-color:  rgba(255, 255, 255, 0.50);
+    color: black;
+    padding: 20px;
+    margin: auto 10px;
+    cursor: pointer;
+    font-size: clamp(.8rem, 3vw, 1rem);
+    letter-spacing: 1px;
+    white-space: nowrap;
+    text-align: center;
+    width: clamp(10rem, 20vw, 15rem);
+}
+
+.address {
+    height: 15vh;
+}
+
+.address h1{
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 13px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.soc-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.80);
+    z-index: 99;
+}
+
+.soc-media h1 {
+    padding: 2px;
+    margin-top: 5px;
+    padding: 8px;
+}
